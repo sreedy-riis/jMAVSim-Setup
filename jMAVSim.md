@@ -1,6 +1,8 @@
 # Table of Contents
 1. [jMAVSim MacOS](#jmavsim-macos)
-    1. [Prerequisties](prequisites)
+    1. [Prerequisties](#prequisites)
+    2. [Installations](#install-libraries)
+    3. [Build and Run](#build-and-run-simulator)
 2. [jMAVSim Ubuntu](#jmavsim-ubuntu)
 3. [jMAVSim Windows](#jmavsim-windows)
 4. [Commands](#commands)
@@ -26,7 +28,7 @@ ulimit -S -n 2048
 ```console
 $ alias pip3=/usr/bin/pip3
 ```
-
+## Install Libraries
 ### Brew Install Libraries
 ```console
 $ brew tap PX4/px4
@@ -76,7 +78,7 @@ To use SITL simulation with jMAVSim you need to have a recent version of Java in
 $ brew install px4-sim-jmavsim
 ```
 
-### Build Simulator
+### Build and Run Simulator
 ```console
 $ cd PX4-Autopilot
 ```
