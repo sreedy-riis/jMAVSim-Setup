@@ -1,6 +1,6 @@
 # Table of Contents
 1. [jMAVSim MacOS](#jmavsim-macos)
-    1. [Prerequisties](#prequisites)
+    1. [Prerequisites](#prerequisites)
     2. [Installations](#install-libraries)
     3. [Build and Run](#build-and-run-simulator)
 2. [jMAVSim Ubuntu](#jmavsim-ubuntu)
@@ -9,7 +9,7 @@
 
 
 # jMAVSim MacOS
-## Prequisites
+## Prerequisites
 Follow steps found here https://docs.px4.io/main/en/dev_setup/dev_env_mac.html.
 I created a virtual environment for python packages, some commands use `--user` which won't work with `venv` so I installed those globally. While the instructions say to use an `x86` terminal on M1 Macs, I don’t think this is true. Trying to install tools on the `x86 `terminal failed a lot of the time but worked fine with an `arm` terminal. The commands below are from the link above.
 
