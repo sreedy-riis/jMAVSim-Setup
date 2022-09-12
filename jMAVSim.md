@@ -73,7 +73,7 @@ sh macos.sh
 ```
 
 ### Brew Install jMAVSim
-To use SITL simulation with jMAVSim you need to have a recent version of Java installed (e.g. Java 15)
+A recent version of Java (e.g. Java 15) needs to be installed to use SITL simulation with jMAVSim.
 ```console
 brew install px4-sim-jmavsim
 ```
