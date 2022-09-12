@@ -85,7 +85,7 @@ make px4_sitl jmavsim
 ### If building fails, pip install anything that failed. I had to specifcally use `pip` to install empy, not `pip3`
 
 # jMAVSim Ubuntu
-The following steps are untested. For more information go to https://docs.px4.io/main/en/dev_setup/building_px4.html.
+I have not tested the following steps for Ubuntu. For more information go to https://docs.px4.io/main/en/dev_setup/building_px4.html.
 
 Clone the PX4 repository
 ```console
