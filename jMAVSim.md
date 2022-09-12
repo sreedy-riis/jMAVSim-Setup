@@ -120,7 +120,7 @@ Set default altitude
 export PX4_HOME_ALT=28.5
 ```
 
-### Build
+### Run Sim
 ```console
 make px4_sitl jmavsim
 ```
