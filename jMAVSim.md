@@ -11,7 +11,7 @@
 # jMAVSim MacOS
 ## Prerequisites
 Follow steps found here https://docs.px4.io/main/en/dev_setup/dev_env_mac.html.
-I created a virtual environment for python packages to keep installs organized. Some commands in the setup scripts use `--user` which won't work with `venv`, so I installed those globally. If using a virtual environment, `--user` can be removed from singular commands. While the documentation says to use an `x86` terminal on M1 Macs, I don’t think this is true. Trying to install tools on the `x86 `terminal failed a lot of the time but worked fine with an `arm` terminal. The commands below are from the link above.
+I created a virtual environment for python packages to keep installs organized. Some commands in the setup scripts use `--user` which won't work with `venv`, so I installed those globally. If using a virtual environment, `--user` can be removed from singular commands. While the documentation says to use an `x86` terminal on M1 Macs, I don’t think this is true. Trying to install tools on the `x86` terminal failed a lot of the time but worked fine with an `arm` terminal. The commands below are from the link above.
 
 ### Install homebrew: https://brew.sh/ 
 
@@ -82,7 +82,7 @@ brew install px4-sim-jmavsim
 ```console
 make px4_sitl jmavsim 
 ```
-### If building fails, pip install anything that failed. I had to specifcally use `pip` to install empy, not `pip3`
+If building fails, pip install anything that failed. I had to specifcally use `pip` to install empy, not `pip3`
 
 # jMAVSim Ubuntu
 I have not tested the following steps for Ubuntu. For more information go to https://docs.px4.io/main/en/dev_setup/building_px4.html.
@@ -106,7 +106,7 @@ make px4_sitl jmavsim
 
 # Commands
 ### Set Location
-Before building run these commands to set the starting location of the drome. The following example uses RIIS office coordinates. If lat and long are invalid then the simulator will not build.
+Before building, run these commands to set the starting location of the drone. The following example uses RIIS office coordinates. If lat and long are invalid then the simulator will not build.
 ```console
 cd PX4-Autopilot
 
