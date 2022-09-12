@@ -11,7 +11,7 @@
 # jMAVSim MacOS
 ## Prerequisites
 Follow steps found here https://docs.px4.io/main/en/dev_setup/dev_env_mac.html.
-I created a virtual environment for python packages, some commands use `--user` which won't work with `venv` so I installed those globally. While the instructions say to use an `x86` terminal on M1 Macs, I don’t think this is true. Trying to install tools on the `x86 `terminal failed a lot of the time but worked fine with an `arm` terminal. The commands below are from the link above.
+I created a virtual environment for python packages to keep installs organized. Some commands in the setup scripts use `--user` which won't work with `venv`, so I installed those globally. If using a virtual environment, `--user` can be removed from singular commands. While the documentation says to use an `x86` terminal on M1 Macs, I don’t think this is true. Trying to install tools on the `x86 `terminal failed a lot of the time but worked fine with an `arm` terminal. The commands below are from the link above.
 
 ### Install homebrew: https://brew.sh/ 
 
