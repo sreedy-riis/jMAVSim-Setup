@@ -3,6 +3,7 @@
     1. [Prerequisites](#prerequisites)
     2. [Installations](#install-libraries)
     3. [Build and Run](#build-and-run-simulator)
+    4. [Gazebo]($setup-gazebo)
 2. [jMAVSim Ubuntu](#jmavsim-ubuntu)
 3. [jMAVSim Windows](#jmavsim-windows)
 4. [Commands](#commands)
@@ -36,9 +37,10 @@ brew install px4-dev
 ```
 
 ### Clone PX4 Source
-Virutal environment can be created inside `PX4-Autopilot`.
+Virutal environment can be created inside `PX4-Autopilot`. Current version of PX4 wouldn't build due to an implicit conversion failure in the code base. Reset project to `7bbdc220f5dcb568f87020cf3837e21043f0a2ab` to avoid problematic file.
 ```console
 git clone https://github.com/PX4/PX4-Autopilot.git --recursive
+git resest --hard 7bbdc220f5dcb568f87020cf3837e21043f0a2ab
 cd PX4-Autopilot
 ```
 
@@ -66,11 +68,6 @@ brew install --cask temurin
 brew install --cask xquartz
 brew install px4-sim-gazebo
 ```
-### Setup PX4-Autopilot
-```console
-cd PX4-Autopilot/Tools/setup
-sh macos.sh
-```
 
 ### Brew Install jMAVSim
 A recent version of Java (e.g. Java 15) needs to be installed to use SITL simulation with jMAVSim.
@@ -78,11 +75,30 @@ A recent version of Java (e.g. Java 15) needs to be installed to use SITL simula
 brew install px4-sim-jmavsim
 ```
 
+### Setup PX4-Autopilot
+```console
+cd PX4-Autopilot/Tools/setup
+sh macos.sh
+```
+
 ### Build and Run Simulator
 ```console
 make px4_sitl jmavsim 
 ```
 If building fails, pip install anything that failed. I had to specifcally use `pip` to install empy, not `pip3`
+
+### Setup Gazebo
+Above steps will also install everything needed for Gazebo as well as jMAVSim. One extra step I had to do was reinstall a homebrew package
+```console
+brew reinstalll icu4c
+```
+
+Build VTOL for Gazebo
+```console
+make px4_sitl gazebo_standard_vtol
+```
+
+
 
 # jMAVSim Ubuntu
 I have not tested the following steps for Ubuntu. For more information go to https://docs.px4.io/main/en/dev_setup/building_px4.html.
@@ -129,6 +145,13 @@ After building the sim, a remote GCS can be set. Place the IP of the device runn
 ```console
 mavlink start -x -u 14550 -f -p -t <REMOTE DEVICE IP>
 ```
+
+### Build Gazebo for VTOL
+```console
+make px4_sitl gazebo_standard_vtol
+```
+
+
 
 
 
