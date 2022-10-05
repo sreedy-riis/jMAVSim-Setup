@@ -3,7 +3,7 @@
     1. [Prerequisites](#prerequisites)
     2. [Installations](#install-libraries)
     3. [Build and Run](#build-and-run-simulator)
-    4. [Gazebo]($setup-gazebo)
+    4. [Gazebo](#setup-gazebo)
 2. [jMAVSim Ubuntu](#jmavsim-ubuntu)
 3. [jMAVSim Windows](#jmavsim-windows)
 4. [Commands](#commands)
